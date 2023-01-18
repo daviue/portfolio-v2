@@ -23,6 +23,7 @@ const Home = () => {
 								'Estudante de Sistemas de Informação',
 								'E esse é o meu portfólio!',
 								'Fique a vontade para explorar',
+								'Veja também meu GitHub',
 								'Hello World!',
 							],
 							autoStart: true,
@@ -32,6 +33,7 @@ const Home = () => {
 					/>
 				</div>
 			</div>
+			<div className="bottom__gradient"></div>
 			<div className="about__container">
 				<div className="about__container-photo">
 					<img className='about__container-img' src="https://avatars.githubusercontent.com/daviue" alt="Davi Rodrigues" />

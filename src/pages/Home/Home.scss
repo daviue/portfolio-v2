@@ -2,29 +2,30 @@ body {
     margin: 0;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background: #1e272e;
+    background: #1e272e; // #222f3e;
     color: #c5c6c7;
 }
 
 /* Intro Container Styles */
 .intro__container {
     height: 100vh;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: #222f3e;
+    background-image: linear-gradient(to bottom, #222f3e 95%, #1e272e 100%);
 }
 
 .primary_name {
     font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    margin-top: 0;
     text-transform: uppercase;
     background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
-    background-size: auto auto;
-    background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
@@ -48,7 +49,7 @@ body {
 
 /* About Container Styles */
 .about__container {
-    height: 80vh;
+    height: 90vh;
     width: 95%;
     margin: 0 auto;
     display: flex;

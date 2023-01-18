@@ -2,21 +2,24 @@ import React from 'react';
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import { Engine } from 'tsparticles-engine';
+import './Particles.scss';
 
 const ParticlesComponent = () => {
-	const particlesInit = useCallback(async engine => {
+	const particlesInit = useCallback(async (engine: Engine) => {
 		await loadFull(engine);
 	}, []);
 
 	return (
 		<Particles
+			className='particles'
 			id="tsparticles"
 			init={particlesInit}
 			options={{
 				fps_limit: 60,
 				fullScreen: {
-					enable: true,
-					zIndex: -1,
+					enable: false,
+					zIndex: 0,
 				},
 				interactivity: {
 					detect_on: 'canvas',
@@ -25,7 +28,7 @@ const ParticlesComponent = () => {
 						onhover: {
 							enable: true,
 							mode: 'repulse',
-							parallax: { enable: false, force: 60, smooth: 10 },
+							parallax: { enable: true, force: 60, smooth: 10 },
 						},
 						resize: true,
 					},
