@@ -46,6 +46,10 @@ const Home = (): JSX.Element => {
 					<h1 className="about__container-title">Sobre mim</h1>
 					<p className='about__text'>Eu sou Davi Rodrigues, ou "daviuee". Tenho 19 anos e atualmente estou cursando Sistemas de Informação.</p>
 					<p className='about__text'>Venho trabalhado com desenvolvimento e manutenção de aplicações web, utilizando de tecnologias como Typescript, Node, React e Angular.</p>
+					<div className="social__networks">
+						<a href='https://www.linkedin.com/in/rodriguesdavi/' target='_blank' rel='noreferrer' className="social__networks-link">LinkedIn</a>
+						<a href='https://github.com/daviue' target='_blank' rel='noreferrer' className="social__networks-link">GitHub</a>
+					</div>
 				</div>
 			</div>
 			<div className='projects' ref={Projetos}>
