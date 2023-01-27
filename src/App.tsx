@@ -1,7 +1,7 @@
-import React from 'react';
-import DefaultRoutes from './components/_routes/routes';
+import React 			from 'react';
+import DefaultRoutes 	from './components/_routes/routes';
 
-function App() {
+function App(): JSX.Element {
 	return (
 		<>
 			<DefaultRoutes />

@@ -1,0 +1,41 @@
+.nav__container {
+    height: 6vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+.nav__menu-list {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav__menu-item {
+    font-size: 1.2rem;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 2rem;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 480px) {
+        padding: 0 0.5rem;
+    }
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+}

@@ -2,8 +2,14 @@ body {
     margin: 0;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background: #1e272e; // #222f3e;
+}
+
+.home {
+    background: #1e272e;
     color: #c5c6c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Intro Container Styles */
@@ -33,6 +39,10 @@ body {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
+
+    @media (max-width: 480px) {
+        font-size: 2.5rem;
+    }
 }
 
 @keyframes textclip {
@@ -45,16 +55,25 @@ body {
     font-size: 1.6rem;
     margin: 0;
     text-align: center;
+
+    @media (max-width: 480px) {
+        font-size: 1.4rem;
+    }
 }
 
 /* About Container Styles */
 .about__container {
-    height: 90vh;
+    height: 100vh;
     width: 95%;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+        height: 75vh;
+        align-items: flex-end;
+    }
 }
 
 .about__container-photo {
@@ -65,22 +84,34 @@ body {
     align-items: center;
     flex-direction: column;
 
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .about__container-img {
     border-radius: 50%;
     border: 2px solid #fff;
+
+    @media (max-width: 1250px) {
+        width: 80%;
+    }
 }
 
 .about__container-text {
     height: auto;
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 2rem;
+    text-justify: auto;
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
 }
 
 .about__container-title {
@@ -105,5 +136,38 @@ body {
 .about__text {
     font-size: 1.6rem;
     margin: 1rem 0;
+    text-align: center;
+
+    @media (max-width: 480px) {
+        font-size: 1.4rem;
+    }
+}
+
+.projects {
+    height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.footer {
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #fff;
+}
+
+.footer__text {
+    font-size: 1.2rem;
+    color: #fff;
     text-align: center;
 }

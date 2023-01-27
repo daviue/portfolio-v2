@@ -1,11 +1,11 @@
-import React from 'react';
-import { useCallback } from 'react';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import { Engine } from 'tsparticles-engine';
+import React 				from 'react';
+import { useCallback } 		from 'react';
+import Particles 			from 'react-tsparticles';
+import { loadFull } 		from 'tsparticles';
+import { Engine } 			from 'tsparticles-engine';
 import './Particles.scss';
 
-const ParticlesComponent = () => {
+const ParticlesComponent = (): JSX.Element => {
 	const particlesInit = useCallback(async (engine: Engine) => {
 		await loadFull(engine);
 	}, []);

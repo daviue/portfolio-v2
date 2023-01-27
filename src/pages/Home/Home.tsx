@@ -1,17 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { useRef } 		from 'react';
+import Typewriter 				from 'typewriter-effect';
+import ParticlesComponent 		from '../../components/Particles/Particles';
+import NavMenu 					from '../../components/NavMenu/NavMenu';
+import CarouselComponent 		from '../../components/Carousel/Carousel';
 import './Home.scss';
-import Typewriter from 'typewriter-effect';
-import ParticlesComponent from '../../components/Particles/Particles';
-import TabView from '../../components/TabView/TabView';
 
 
-const Home = () => {
-
+const Home = (): JSX.Element => {
+	const Inicio = useRef(null);
+	const Sobre = useRef(null);
+	const Projetos = useRef(null);
 
 	return (
-		<>
-			<div className="intro__container">
+		<div className='home'>
+			<div className="intro__container" ref={Inicio}>
+				<NavMenu Inicio={Inicio} Sobre={Sobre} Projetos={Projetos}/>
 				<ParticlesComponent />
 				<h1 className="primary_name">Davi Rodrigues</h1>
 				<div className="primary__desc">
@@ -34,7 +38,7 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="bottom__gradient"></div>
-			<div className="about__container">
+			<div className="about__container" ref={Sobre}>
 				<div className="about__container-photo">
 					<img className='about__container-img' src="https://avatars.githubusercontent.com/daviue" alt="Davi Rodrigues" />
 				</div>
@@ -44,7 +48,13 @@ const Home = () => {
 					<p className='about__text'>Venho trabalhado com desenvolvimento e manutenção de aplicações web, utilizando de tecnologias como Typescript, Node, React e Angular.</p>
 				</div>
 			</div>
-		</>
+			<div className='projects' ref={Projetos}>
+				<CarouselComponent />
+			</div>
+			<div className="footer">
+				<span className="footer__text">Davi Rodrigues 2023 &copy;</span>
+			</div>
+		</div>
 	);
 };
 
