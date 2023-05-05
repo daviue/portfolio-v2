@@ -12,6 +12,7 @@ const Home = (): JSX.Element => {
 	const Sobre = useRef(null);
 	const Projetos = useRef(null);
 
+
 	return (
 		<div className='home'>
 			<div className="intro__container" ref={Inicio}>
@@ -44,7 +45,7 @@ const Home = (): JSX.Element => {
 				</div>
 				<div className="about__container-text">
 					<h1 className="about__container-title">Sobre mim</h1>
-					<p className='about__text'>Eu sou Davi Rodrigues, ou "daviuee". Tenho 19 anos e atualmente estou cursando Sistemas de Informação.</p>
+					<p className='about__text'>Eu sou Davi Rodrigues, ou "daviuee". Tenho 20 anos e atualmente estou cursando Sistemas de Informação.</p>
 					<p className='about__text'>Venho trabalhado com desenvolvimento e manutenção de aplicações web, utilizando de tecnologias como Typescript, Node, React e Angular.</p>
 					<div className="social__networks">
 						<a href='https://www.linkedin.com/in/rodriguesdavi/' target='_blank' rel='noreferrer' className="social__networks-link">LinkedIn</a>
