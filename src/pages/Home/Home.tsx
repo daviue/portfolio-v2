@@ -18,18 +18,19 @@ const Home = (): JSX.Element => {
 			<div className="intro__container" ref={Inicio}>
 				<NavMenu Inicio={Inicio} Sobre={Sobre} Projetos={Projetos}/>
 				<ParticlesComponent />
+				<span className="primary__skills">React / Angular / Next / NodeJS / Python / C#</span>
 				<h1 className="primary_name">Davi Rodrigues</h1>
 				<div className="primary__desc">
 					<Typewriter
 						options={{
 							strings: [
-								'Desenvolvedor Web',
+								'Hello World!',
+								'Desenvolvedor Fullstack',
 								'Entusiasta da tecnologia',
 								'Estudante de Sistemas de Informação',
 								'E esse é o meu portfólio!',
 								'Fique a vontade para explorar',
-								'Veja também meu GitHub',
-								'Hello World!',
+								'Veja também meu GitHub!',
 							],
 							autoStart: true,
 							loop: true,
@@ -45,8 +46,8 @@ const Home = (): JSX.Element => {
 				</div>
 				<div className="about__container-text">
 					<h1 className="about__container-title">Sobre mim</h1>
-					<p className='about__text'>Eu sou Davi Rodrigues, ou "daviuee". Tenho 20 anos e atualmente estou cursando Sistemas de Informação.</p>
-					<p className='about__text'>Venho trabalhado com desenvolvimento e manutenção de aplicações web, utilizando de tecnologias como Typescript, Node, React e Angular.</p>
+					<p className='about__text'>Tenho 20 anos e atualmente estou cursando Sistemas de Informação, tendo contato com programação desde os 14 anos sendo Python a primeira linguagem que tive contato.</p>
+					<p className='about__text'>Venho trabalhando com desenvolvimento e manutenção de aplicações web, utilizando de tecnologias como Typescript, Node, React e Angular. Além de projetos de automação no qual utilizo Python ou C#.</p>
 					<div className="social__networks">
 						<a href='https://www.linkedin.com/in/rodriguesdavi/' target='_blank' rel='noreferrer' className="social__networks-link">LinkedIn</a>
 						<a href='https://github.com/daviue' target='_blank' rel='noreferrer' className="social__networks-link">GitHub</a>

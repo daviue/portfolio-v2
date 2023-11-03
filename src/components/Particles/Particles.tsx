@@ -41,7 +41,7 @@ const ParticlesComponent = (): JSX.Element => {
 					color: { value: '#ffffff' },
 					line_linked: {
 						color: '#ffffff',
-						distance: 150,
+						distance: 100,
 						enable: true,
 						opacity: 0.4,
 						width: 1,
