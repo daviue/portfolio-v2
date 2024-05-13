@@ -6,9 +6,6 @@ import { FaLongArrowAltRight, FaTwitter } 	from 'react-icons/fa';
 /* Sources */
 import background from './assets/bg.gif';
 
-/* Services */
-import axios from 'axios';
-
 /* Components */
 import SpinnerLoading from './ProjectComponents/SpinnerLoading';
 import SocialButtons from './ProjectComponents/SocialButtons';
