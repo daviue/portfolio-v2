@@ -107,12 +107,8 @@ const Quotes = (): JSX.Element => {
 	const [quote, setQuote] = useState({'text': '', 'author': ''});
 
 	useEffect((): void => {
-		axios
-			.get('https://run.mocky.io/v3/c57b000f-838d-4ec7-a4b0-34f99c702035')
-			.then(res => {
-				setQuoteList(res.data);
-			})
-			.catch(err => console.log('ops! ocorreu um erro:\n' + err));
+		const quotes = require('./quotes.json');
+		setQuoteList(quotes);
 	}, []);
 
 	useEffect((): void => newQuote(), [quoteList]);

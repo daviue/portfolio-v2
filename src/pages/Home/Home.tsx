@@ -11,7 +11,7 @@ const Home = (): JSX.Element => {
 	const Inicio = useRef(null);
 	const Sobre = useRef(null);
 	const Projetos = useRef(null);
-
+	const thisYear = new Date().getFullYear();
 
 	return (
 		<div className='home'>
@@ -46,7 +46,7 @@ const Home = (): JSX.Element => {
 				</div>
 				<div className="about__container-text">
 					<h1 className="about__container-title">Sobre mim</h1>
-					<p className='about__text'>Tenho 20 anos e atualmente estou cursando Sistemas de Informação, tendo contato com programação desde os 14 anos sendo Python a primeira linguagem que tive contato.</p>
+					<p className='about__text'>Tenho 21 anos e atualmente estou cursando Sistemas de Informação, tendo contato com programação desde os 14 anos sendo Python a primeira linguagem que tive contato.</p>
 					<p className='about__text'>Venho trabalhando com desenvolvimento e manutenção de aplicações web, utilizando de tecnologias como Typescript, Node, React e Angular. Além de projetos de automação no qual utilizo Python ou C#.</p>
 					<div className="social__networks">
 						<a href='https://www.linkedin.com/in/rodriguesdavi/' target='_blank' rel='noreferrer' className="social__networks-link">LinkedIn</a>
@@ -58,7 +58,7 @@ const Home = (): JSX.Element => {
 				<CarouselComponent />
 			</div>
 			<div className="footer">
-				<span className="footer__text">Davi Rodrigues 2023 &copy;</span>
+				<span className="footer__text">Davi Rodrigues {thisYear} &copy;</span>
 			</div>
 		</div>
 	);
